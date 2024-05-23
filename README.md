@@ -3,9 +3,9 @@
 
 ## Technos:  
 * Languages:  
-  * JS, PHP, HTML, CSS  
+  * JS (vanilla, frontend), PHP (vanilla, backend), HTML, CSS  
 * Libraries:  
-  * Bootstrap (front-end framework)  
+  * Bootstrap (frontend CSS library)  
 * Frameworks:  
   * None
 
