@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cash-chan
+  namespace: cash-chan-ns
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cash-chan
+  template:
+    metadata:
+      labels:
+        app: cash-chan
+    spec:
+      containers:
+      - name: cash-chan
+        image: cash-chan:latest
+        ports:
+        - containerPort: 3333
+        resources:  # Resource limits.. meh. (and requests..?)
+          limits:
+            cpu: 500m
+            memory: 512Mi
+          requests:
+            cpu: 200m
+            memory: 256Mi
+# kubectl apply -f deployment.yaml
