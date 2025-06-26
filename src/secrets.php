@@ -23,7 +23,7 @@ $dbhostaddr = '127.0.0.1';  // IP of the Postgres VM.
 $dbport = '5432';  // Port that Postgres is listening to on the VM.
 $dbname = 'anything';  // Name of the remote database.
 $dbuser = 'anything';  // Name of the remote database's user.
-$dbpassword = 'a secure anything';  // Remote database password.
-$secretKey = 'a secure anything';  // Secret key used to generate and validate JSON Web tokens.
+$dbpassword = 'a_secure_anything';  // Remote database password.
+$secretKey = 'a_secure_anything';  // Secret key used to generate and validate JSON Web tokens.
 
 ?>
